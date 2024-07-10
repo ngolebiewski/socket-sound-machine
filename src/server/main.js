@@ -12,7 +12,7 @@ const httpServer = createServer(app);
 // Initialize Socket.IO server with HTTP server instance
 const io = new SocketIOServer(httpServer, {
   cors: {
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
+    origin: ["http://localhost:5173", "http://127.0.0.1:5173", "https://socket-sound-machine.onrender.com/"],
     // origin: true,
     methods: ["GET", "POST"],
     credentials: true,
