@@ -52,8 +52,8 @@ httpServer.on('error', (error) => {
   process.exit(1); // Exit the process on server error
 });
 
-// Use ViteExpress to handle Vite's middleware
-ViteExpress.config({ mode: 'development' });
+// // Use ViteExpress to handle Vite's middleware
+// ViteExpress.config({ mode: 'development' });
 
 // Start the server
 const startServer = async () => {
