@@ -14,9 +14,12 @@ const soundFiles = [
 ];
 
 // Initialize Socket.IO client
-const socket = io('/', {
-  path: '/socket.io',
-});
+
+const socket = io('http://localhost:3000');
+
+// const socket = io('/', {
+//   path: '/socket.io',
+// });
 
 function App() {
   // Create Howl instances for each sound file
@@ -53,6 +56,8 @@ function App() {
             </Button>
           </Box>
         ))}
+        <p>Source: <a href="https://github.com/ngolebiewski/socket-sound-machine">https://github.com/ngolebiewski/socket-sound-machine</a> </p>
+
       </Box>
     </>
   );
